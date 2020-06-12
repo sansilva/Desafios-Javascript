@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" type="text/css" href="CSS/stylesheet.css" media="screen" />
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professora Furiosa</title>
+</head>
+<body>
+<h1>Desafios Javascript</h1>
+
+    <ul>
+        <li>Em troca da sua ajuda, eu ofereço algo muito valioso.</li>
+        <li>Minha liberdade?</li>
+        <li>A liberdade pode nos ser tirada, como você bem sabe. Eu te ofereço meu conhecimento.</li>
+    </ul>
+
+    <p>O Conde de Monte Cristo</p>
+
+    <script>
+        function acontece (alunosDia, quant){
+               var presentes = 0;            
+               for (var i = 0; i < alunosDia.length; i++){            
+                 if (alunosDia[i] <= 0) presentes++;              
+                 if (presentes >= quant) return true;            
+               }
+            
+               return false;             
+            }
+            
+            function aberturas (alunosDia, quant){            
+               var resultadoArray = [];            
+               for (var i = 0; i < alunosDia.length; i++){            
+                resultadoArray.push(acontece(alunosDia[i], quant));             
+               }
+            
+               return resultadoArray;              
+            }
+            
+            
+    </script>    
+    
+</body>
+</html>
