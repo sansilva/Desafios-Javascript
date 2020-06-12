@@ -20,20 +20,20 @@
     <p>O Conde de Monte Cristo</p>
 
     <script>
-        function acontece (alunosDia, quant){
+        function acontece (alunosDia, x){
                var presentes = 0;            
                for (var i = 0; i < alunosDia.length; i++){            
                  if (alunosDia[i] <= 0) presentes++;              
-                 if (presentes >= quant) return true;            
+                 if (presentes >= x) return true;            
                }
             
                return false;             
             }
             
-            function aberturas (alunosDia, quant){            
+            function aberturas (alunosDia, x){            
                var resultadoArray = [];            
                for (var i = 0; i < alunosDia.length; i++){            
-                resultadoArray.push(acontece(alunosDia[i], quant));             
+                resultadoArray.push(acontece(alunosDia[i], x));             
                }
             
                return resultadoArray;              
