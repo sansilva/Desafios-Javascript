@@ -20,23 +20,23 @@
     <p>O Conde de Monte Cristo</p>
 
     <script>
-        function acontece (alunosDia, x){
+        function acontece (estudantes, x){
                var presentes = 0;            
-               for (var i = 0; i < alunosDia.length; i++){            
-                 if (alunosDia[i] <= 0) presentes++;              
+               for (var i = 0; i < estudantes.length; i++){            
+                 if (estudantes[i] <= 0) presentes++;              
                  if (presentes >= x) return true;            
                }
             
                return false;             
             }
             
-            function aberturas (alunosDia, x){            
-               var resultadoArray = [];            
-               for (var i = 0; i < alunosDia.length; i++){            
-                resultadoArray.push(acontece(alunosDia[i], x));             
+            function aberturas (estudantes, x){            
+               var result = [];            
+               for (var i = 0; i < estudantes.length; i++){            
+                result.push(acontece(estudantes[i], x));             
                }
             
-               return resultadoArray;              
+               return result;              
             }
             
             
